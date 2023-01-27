@@ -1,5 +1,10 @@
 import pandas as pd
+import streamlit as st
 
-df = pd.read_csv("C:/Users/Andrea/Streamlit/test.csv", delimiter = ";")
+st.title('The Beatles')
 
-print(df)
+df = pd.read_csv("https://github.com/Andre4102/streamlit_test/blob/main/test.csv", delimiter = ";")
+
+if st.checkbox('Show raw data'):
+    st.subheader('Raw data')
+    st.write(df)
