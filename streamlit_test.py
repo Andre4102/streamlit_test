@@ -5,6 +5,6 @@ st.title('The Beatles')
 
 df = pd.read_csv("https://github.com/Andre4102/streamlit_test/blob/main/test.csv", delimiter = ";")
 
-if st.checkbox('Show raw data'):
-    st.subheader('Raw data')
+if st.checkbox('Show the Beatles'):
+    st.subheader('Ladies and Gentlemen: The Beatles')
     st.write(df)
